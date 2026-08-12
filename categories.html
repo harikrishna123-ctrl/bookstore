@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/76d63833a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hari.css" />
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#" onclick="event.preventDefault(); display('sectionhome')">
+            <i class="fa-solid fa-book"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active c1" href="hari.html" >Home</a>
+                <a class="nav-link c1" href="book.html" >Books</a>
+                <a class="nav-link c1" href="authors.html" >Authors</a>
+                <a class="nav-link c1" href="categories.html" >Categories</a>
+                <a class="nav-link c1" href="sectionpage.html" >Contact</a>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search books" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <h1 class="m1"> Categories</h1>
+    <div class="d-flex flex-row justify-content-center flex-wrap">
+        <div class="border shadow mr-5 p-3" href="bestprogrambooks.html" style="cursor:pointer">
+            <i class="fa-solid fa-laptop-code c2"></i>
+            <p>Programming</p>
+        </div>
+
+        <div class="border shadow mr-4 p-4" onclick="display('section-science')" style="cursor:pointer">
+            <i class="fa-solid fa-flask c3"></i>
+            <p>Science</p>
+        </div>
+
+        <div class="border shadow mr-4 p-4" onclick="display('section-history')" style="cursor:pointer">
+            <i class="fa-solid fa-building-columns c4"></i>
+            <p>History</p>
+        </div>
+
+        <div class="border shadow mr-4 p-4" onclick="display('section-business')" style="cursor:pointer">
+            <i class="fa-solid fa-money-check-dollar"></i>
+            <p>Business</p>
+        </div>
+
+        <div class="border shadow mr-4 p-4" onclick="display('section-biography')" style="cursor:pointer">
+            <i class="fa-sharp fa-regular fa-book-user"></i>
+            <p>Biography</p>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>
+        function display(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+</body>
+
+</html>

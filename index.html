@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Bookstore Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/76d63833a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hari.css" />
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1600&q=80')
+                center center / cover no-repeat fixed;
+        }
+
+        .bg-overlay {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 70px;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        .bg-overlay .text-center {
+            color: white;
+        }
+
+        .navbar .form-inline {
+            margin-left: auto;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: #FFDDA9 !important;
+        }
+
+        .navbar-brand .fa-book {
+            color: #FFDDA9;
+            font-size: 1.2rem;
+        }
+
+        .navbar-title {
+            color: #FFDDA9;
+            margin-left: 0.35rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand d-flex align-items-center" href="#" onclick="event.preventDefault(); display('sectionhome')">
+            <i class="fa-solid fa-book mr-2"></i>
+            <span class="navbar-title">Bookstore</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active c1" href="hari.html" >Home</a>
+                <a class="nav-link c1" href="book.html" >Books</a>
+                <a class="nav-link c1" href="authors.html" >Authors</a>
+                <a class="nav-link c1" href="categories.html" >Categories</a>
+                <a class="nav-link c1" href="sectionpage.html" >Contact</a>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search books" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="sectionhome" class="bg-overlay">
+        <div class="text-center">
+            <h1 class="h1">Discover Your <span class="h2">Next</span> Favorite Book</h1>
+            <p class="h3">Explore thousands of books across all genres from best-selling authors</p>
+            <button class="btn btn-light mr-2">Explore Books</button>
+            <button class="btn btn-outline-light">Best Sellers</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>
+        function display(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

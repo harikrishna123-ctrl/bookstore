@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/76d63833a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hari.css" />
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#" onclick="event.preventDefault(); display('sectionhome')">
+            <i class="fa-solid fa-book"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active c1" href="hari.html" >Home</a>
+                <a class="nav-link c1" href="book.html" >Books</a>
+                <a class="nav-link c1" href="authors.html" >Authors</a>
+                <a class="nav-link c1" href="categories.html" >Categories</a>
+                <a class="nav-link c1" href="sectionpage.html" >Contact</a>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search books" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+<div class="container mb-5">
+        <header class="text-center mb-5">
+            <h1 class="m1">Contact Us</h1>
+            <p class="h4">Send a message, view our contact information, or find us on the map.</p>
+        </header>
+
+        <div class="contact-page d-flex flex-column flex-md-row align-items-stretch">
+            <section class="contact-panel contact-form-panel flex-fill mb-4 mb-md-0 mr-md-3">
+                <h3 class="mb-4">Send a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" class="form-control" id="contact-name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" class="form-control" id="contact-email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" class="form-control" id="contact-subject" placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea class="form-control" id="contact-message" rows="6" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+            <section class="contact-panel contact-info-panel flex-fill mb-4 mb-md-0 mr-md-3">
+                <h3 class="mb-4">Contact Information</h3>
+                <p><strong>Phone:</strong> 6281755717</p>
+                <p><strong>Email:</strong> harikrishnar363@gmail.com</p>
+                <p><strong>Address:</strong> Kadapa, Andhra Pradesh, India</p>
+                <p class="mt-4">
+                    We are ready to help you choose the best books and answer your questions.
+                </p>
+            </section>
+
+            <section class="contact-panel contact-map-panel">
+                <h3 class="mb-4">Location</h3>
+                <div class="map-wrap">
+                    <iframe class="contact-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60990.28124764267!2d78.70127598708414!3d14.46136812712079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbb2d0c5f4e4417%3A0x2e5a5c0c79959ff1!2sKadapa%2C%20Andhra%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1618309110943!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>
+        function display(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-image: url("https://t3.ftcdn.net/jpg/08/15/90/80/360_F_815908053_Mfy2DJfv1iFSdL6ET9pRD5R5VzOOEu5k.jpg");
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+}
+
+.height {
+    height: 50px;
+    width: 50px;
+}
+
+.c1 {
+    color: red;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.h2 {
+    color: #FFDDA9;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.h3 {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.btn {
+    background-color: orange;
+    color: white;
+    border-radius: 03px;
+    font-weight: bold;
+}
+
+.c2 {
+    background-color: #0C0521;
+}
+
+.btn1 {
+    background-color: transparent;
+    color: white;
+    border-radius: 03px;
+    font-weight: bold;
+}
+
+.border {
+    border-radius: 3px;
+    border: 1px solid white;
+    height: 100px;
+    width: 120px;
+}
+
+.b1 {
+    height: 200px;
+    width: 150px;
+}
+
+.container {
+    background-color:#ffffff;
+    height: 130vh;
+    background-size: cover;
+}
+
+.m1 {
+    color: black;
+    font-weight: bold;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.border1 {
+    border-radius: 3px;
+    border: 1px solid white;
+    width: 160px;
+    height: 250px;
+
+}
+
+.c1 {
+    color: green;
+}
+
+.c2 {
+    color: green;
+}
+
+.c3 {
+    color: blue;
+}
+
+.c4 {
+    color: red;
+}
+
+.btn3 {
+    background-color: transparent;
+    color: orange;
+    border-radius: 03px;
+    font-weight: bold;
+    border: 2px solid orange;
+}
+
+.p {
+    margin-top: 20px;
+}
+
+.author-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+}
+
+.author-card {
+    min-height: 100%;
+}
+
+.contact-page {
+    gap: 1.5rem;
+}
+
+.contact-panel {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 2rem;
+    flex: 1;
+    min-width: 280px;
+}
+
+@media (min-width: 768px) {
+    .contact-panel {
+        max-width: calc(33.333% - 1rem);
+    }
+}
+
+.contact-info-panel p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.contact-iframe {
+    width: 100%;
+    min-height: 320px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.map-wrap {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.margin {
+    margin-left:300px;
+}
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .bg-overlay {
+        padding-top: 90px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bg-overlay .text-center {
+        padding: 0 0.5rem;
+    }
+
+    .navbar .form-inline {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 0.75rem;
+    }
+
+    .navbar .form-inline .form-control {
+        width: calc(100% - 120px);
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-overlay {
+        padding-top: 100px;
+        padding-bottom: 3rem;
+    }
+
+    .h1,
+    .h2 {
+        font-size: 2rem;
+    }
+
+    .h3 {
+        font-size: 1rem;
+    }
+
+    .bg-overlay button {
+        display: block;
+        width: 100%;
+        margin: 0 0 0.75rem;
+    }
+
+    .bg-overlay button:last-child {
+        margin-bottom: 0;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .navbar .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar .form-inline .form-control,
+    .navbar .form-inline .btn {
+        width: 100%;
+    }
+
+    .navbar .form-inline .btn {
+        margin-top: 0.5rem;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .border,
+    .border1,
+    .b1,
+    .author-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .margin {
+        margin-left: 0;
+    }
+}
